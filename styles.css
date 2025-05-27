@@ -1,112 +1,121 @@
-body {
-  font-family: 'Arial', sans-serif;
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #eef1f5;
   color: #333;
   line-height: 1.6;
 }
 
 header {
-  background-color: #333;
-  color: white;
-  padding: 30px;
+  background: linear-gradient(to right, #333, #555);
+  color: #fff;
+  padding: 20px;
   text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
 }
 
 section {
-  padding: 40px;
-  margin: 20px auto;
   max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 h2 {
-  border-bottom: 3px solid #333;
+  font-size: 1.8rem;
   padding-bottom: 10px;
+  border-bottom: 2px solid #ddd;
   margin-bottom: 20px;
-  font-size: 1.5rem;
-  color: #333;
+  color: #444;
 }
 
 #about {
-  background-color: white;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-#about-text {
+#about img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #333;
+  margin-bottom: 20px;
+}
+
+#about p {
   font-size: 1.1rem;
-  color: #555;
+  max-width: 800px;
+  margin-bottom: 10px;
 }
 
-#about a {
-  color: #0077b5;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-#about a:hover {
-  text-decoration: underline;
-}
-
-.media-container, .projects-container {
+.media-container,
+.projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  margin-top: 20px;
 }
 
-.media-item, .project-item {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+.media-item,
+.project-item {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.media-item:hover, .project-item:hover {
-  transform: scale(1.05);
+.media-item:hover,
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-.media-item iframe, .project-item iframe {
+/* Iframe Styling */
+.media-item iframe,
+.project-item iframe {
   width: 100%;
   height: 200px;
-  border-radius: 8px;
+  border: none;
 }
 
-.media-item h3, .project-item h3 {
+/* Headings inside Items */
+.media-item h3,
+.project-item h3 {
   font-size: 1.2rem;
-  margin-bottom: 10px;
+  margin: 10px;
+  color: #333;
 }
 
 .description {
   font-size: 0.95rem;
-  color: #555;
-  margin-top: 10px;
+  color: #666;
+  margin: 10px;
 }
 
 a {
   color: #0077b5;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-.tiktok-embed {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  border-radius: 8px;
-  overflow: hidden;
-  display: block;
-  background-color: #fff;
 }
 
 .tiktok-embed section {
