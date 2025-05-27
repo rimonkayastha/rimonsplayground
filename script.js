@@ -11,8 +11,8 @@ const mediaContent = [
     description: "Project for a Discrimination Webinar when I was in 9th grade."
   },
   {
-    title: "Tiktok Video on Human Trafficking (60k views)",
-    embedUrl: "https://www.tiktok.com/@detecfurious/photo/7155847062691515674"
+    title: "TikTok Video on Human Trafficking (60k views)",
+    embedUrl: "https://www.tiktok.com/@detecfurious/video/7155847062691515674"
   },
   {
     title: "Kala Yatra Advertisement Video",
@@ -51,6 +51,10 @@ const projects = [
   }
 ];
 
+function isTikTokVideo(url) {
+  return url.includes("tiktok.com") && url.includes("/video/");
+}
+
 function loadAboutMe() {
   const aboutSection = document.getElementById('about-text');
   aboutSection.innerHTML = `
@@ -68,10 +72,22 @@ function loadMedia() {
     const div = document.createElement('div');
     div.className = 'media-item';
 
-    // Check for TikTok — show link instead of iframe
-    const content = item.embedUrl.includes("tiktok.com")
-      ? `<a href="${item.embedUrl}" target="_blank">Watch on TikTok</a>`
-      : `<iframe src="${item.embedUrl}" frameborder="0" allowfullscreen></iframe>`;
+    let content = '';
+
+    if (isTikTokVideo(item.embedUrl)) {
+      const match = item.embedUrl.match(/video\/(\d+)/);
+      const videoId = match ? match[1] : '';
+      content = `
+        <blockquote class="tiktok-embed"
+          cite="${item.embedUrl}"
+          data-video-id="${videoId}"
+          style="max-width: 605px; min-width: 325px;">
+          <section></section>
+        </blockquote>
+      `;
+    } else {
+      content = `<iframe src="${item.embedUrl}" frameborder="0" allowfullscreen></iframe>`;
+    }
 
     div.innerHTML = `
       <h3>${item.title}</h3>
@@ -80,6 +96,10 @@ function loadMedia() {
     `;
     mediaContainer.appendChild(div);
   });
+
+  if (typeof window.tiktokEmbed !== 'undefined') {
+    window.tiktokEmbed.init();
+  }
 }
 
 function loadProjects() {
@@ -103,3 +123,4 @@ document.addEventListener('DOMContentLoaded', () => {
   loadMedia();
   loadProjects();
 });
+
