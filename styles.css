@@ -1,74 +1,86 @@
-/* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  color: #222;
+  color: #333;
+  line-height: 1.6;
 }
 
 header {
   background-color: #333;
-  color: #fff;
-  padding: 20px;
+  color: white;
+  padding: 30px;
   text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 section {
-  padding: 20px;
+  padding: 40px;
+  margin: 20px auto;
+  max-width: 1200px;
 }
 
 h2 {
-  border-bottom: 2px solid #333;
+  border-bottom: 3px solid #333;
   padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
 }
 
-/* About Me */
 #about {
-  background-color: #ffffff;
+  background-color: white;
   padding: 20px;
-  margin: 20px;
-  border-left: 4px solid #333;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#about p {
-  font-size: 1.05rem;
-  line-height: 1.6;
-  color: #444;
+#about-text {
+  font-size: 1.1rem;
+  color: #555;
 }
 
-#profile-pic {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  display: block;
-  margin-bottom: 15px;
+#about a {
+  color: #0077b5;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* Media and Projects */
+#about a:hover {
+  text-decoration: underline;
+}
+
 .media-container, .projects-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
-  justify-content: center;
+  margin-top: 20px;
 }
 
 .media-item, .project-item {
-  background-color: #fff;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  flex: 1 1 300px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.media-item iframe,
-.project-item iframe {
+.media-item:hover, .project-item:hover {
+  transform: scale(1.05);
+}
+
+.media-item iframe, .project-item iframe {
   width: 100%;
   height: 200px;
-  border: none;
+  border-radius: 8px;
+}
+
+.media-item h3, .project-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
 .description {
@@ -77,12 +89,26 @@ h2 {
   margin-top: 10px;
 }
 
-/* Links */
 a {
   color: #0077b5;
   text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+.tiktok-embed {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  display: block;
+  background-color: #fff;
+}
+
+.tiktok-embed section {
+  margin: 0;
 }
