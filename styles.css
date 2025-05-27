@@ -11,19 +11,21 @@ body {
   line-height: 1.6;
 }
 
+/* Header Section - Rimon's Playground */
 header {
   background: linear-gradient(to right, #333, #555);
   color: #fff;
-  padding: 20px;
+  padding: 10px; /* Reduced padding */
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 1.8rem; /* Reduced font size */
   margin: 0;
 }
 
+/* Main Section Box */
 section {
   max-width: 1200px;
   margin: 40px auto;
@@ -33,6 +35,7 @@ section {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Section Headings */
 h2 {
   font-size: 1.8rem;
   padding-bottom: 10px;
@@ -41,11 +44,14 @@ h2 {
   color: #444;
 }
 
+/* About Me Styling */
 #about {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 #about img {
@@ -62,6 +68,21 @@ h2 {
   margin-bottom: 10px;
 }
 
+#about a {
+  color: #0077b5;
+  text-decoration: none;
+  font-weight: 500;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  display: inline-block;
+  max-width: 100%;
+}
+
+#about a:hover {
+  text-decoration: underline;
+}
+
+/* Media and Project Grid */
 .media-container,
 .projects-container {
   display: grid;
@@ -69,6 +90,7 @@ h2 {
   gap: 20px;
 }
 
+/* Individual Media/Project Cards */
 .media-item,
 .project-item {
   background-color: #fff;
@@ -100,20 +122,16 @@ h2 {
   color: #333;
 }
 
+/* Description Text */
 .description {
   font-size: 0.95rem;
   color: #666;
   margin: 10px;
 }
 
-a {
-  color: #0077b5;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-a:hover {
-  text-decoration: underline;
+/* Remove extra bracket from previous version */
+.tiktok-embed section {
+  margin: 0;
 }
 
 }
