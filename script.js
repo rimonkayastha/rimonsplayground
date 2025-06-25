@@ -25,6 +25,11 @@ const mediaContent = [
     description: "Comic contribution for a School Magazine in 10th grade."
   },
   {
+    title: "A Day in my life - Video Reel",
+    embedUrl: "https://drive.google.com/file/d/1AzL2SXSJypIT_EyQ-HJV7noQtE_NOgHK/preview",
+    description: "Application Video for Incubate Nepal and Uunchai (REJECTED)"
+  },
+  {
     title: "Poster for my Student Council Campaign",
     embedUrl: "https://drive.google.com/file/d/1kPPH1xq4UNl-7PymkLrPBS__VuvQYQFO/preview",
     description: "Poster I designed for my campaign. I was elected with the highest votes."
