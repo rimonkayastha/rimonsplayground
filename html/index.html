@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<head>
+    <title>Rimon's Playground</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="buttons">
+            <div class="art">
+                <a href="./art.html">
+                    <img class="images art-image" src="../images/art1.png">
+                </a>
+            </div>
+            <div class="code">
+                <a href="./code.html">
+                    <img class="images code-image" src="../images/coding1.png">
+                </a>
+            </div>
+            <!-- <div class="media">
+                <a href="./media.html">
+                    <img class="images media-image" src="../images/media1.png">
+                </a>
+            </div>
+            <div class="robotics">
+                <a href="./robotics.html">
+                    <img class="images robotics-image" src="../images/robotics1.png">
+                </a>
+            </div> -->
+        </div>
+    </div>
+    <script>
+        art_button = document.querySelector('.art-image');
+        code_button = document.querySelector('.code-image');
+        media_button = document.querySelector('.media-image');
+        robotics_button = document.querySelector('.robotics-image');
+        art_button.addEventListener('mouseover', function() {
+            this.src="../images/art2.png"
+        })
+        art_button.addEventListener('mouseout', function() {
+            this.src="../images/art1.png"
+        })
+        code_button.addEventListener('mouseover', function() {
+            this.src="../images/coding2.png"
+        })
+        code_button.addEventListener('mouseout', function() {
+            this.src="../images/coding1.png"
+        })
+        media_button.addEventListener('mouseover', function() {
+            this.src="../images/media2.png"
+        })
+        media_button.addEventListener('mouseout', function() {
+            this.src="../images/media1.png"
+        })
+        robotics_button.addEventListener('mouseover', function() {
+            this.src="../images/robotics2.png"
+        })
+        robotics_button.addEventListener('mouseout', function() {
+            this.src="../images/robotics1.png"
+        })
+    </script>
+</body>
