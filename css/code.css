@@ -172,8 +172,8 @@ a {
     width: 35vw;
     position: absolute;
     z-index: 1;
-    top: 10vh;
-    left: 10vw;
+    top: 80px;
+    left: 70px;
     border: 2px solid black;
     transition: width 0.5s;
 }
@@ -183,8 +183,8 @@ a {
 .images-2-2 {
     width: 30vw;
     position: absolute;
-    top: 25vh;
-    left: 6vw;
+    top: 180px;
+    left: 50px;
     border: 2px solid black;
     transition: z-index 0.5s, width 0.5s;
 }
@@ -195,8 +195,8 @@ a {
 .images-2-3 {
     width: 30vw;
     position: absolute;
-    top: 1vh;
-    left: 1vw;
+    top: 4px;
+    left: 4px;
     border: 2px solid black;
     transition: z-index 0.5s, width 0.5s;
 }
