@@ -1,7 +1,7 @@
 body, html {
     padding: 0;
     margin: 0;
-    background-image: url('../images/white-rough-texture-pattern.jpg'); 
+    background-image: url('../images/white-rough-texture-pattern-1.jpg'); 
     background-size: cover; 
     background-position: center; 
 
@@ -132,6 +132,32 @@ a {
     border: 1px solid black;
     cursor: pointer;
 }
+.view-game {
+    border: 1px solid #1C4D9B;
+    color: #1C4D9B;
+    padding: 5px;
+    transition: background-color 0.2s;
+    margin-left: 5px;
+}
+.view-game:hover {
+    background-color: #1C4D9B;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.view-gameplay {
+    border: 1px solid black;
+    color: black;
+    padding: 5px;
+    transition: background-color 0.2s;
+    margin-left: 5px;
+}
+.view-gameplay:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
 .image-container {
     display: flex;
     flex-direction: column;
@@ -149,6 +175,10 @@ a {
     top: 10vh;
     left: 10vw;
     border: 2px solid black;
+    transition: width 0.5s;
+}
+.images-2-1:hover {
+    width: 37vw;
 }
 .images-2-2 {
     width: 30vw;
@@ -156,6 +186,11 @@ a {
     top: 25vh;
     left: 6vw;
     border: 2px solid black;
+    transition: z-index 0.5s, width 0.5s;
+}
+.images-2-2:hover {
+    width: 32vw;
+    z-index: 3;
 }
 .images-2-3 {
     width: 30vw;
@@ -163,6 +198,11 @@ a {
     top: 1vh;
     left: 1vw;
     border: 2px solid black;
+    transition: z-index 0.5s, width 0.5s;
+}
+.images-2-3:hover {
+    width: 32vw;
+    z-index: 3;
 }
 .gif-container {
     display: flex;
@@ -177,4 +217,8 @@ a {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     border-right: 1px solid black;
+    transition: max-width 0.5s;
+}
+.rock-paper-gif:hover {
+    max-width: 420px;
 }

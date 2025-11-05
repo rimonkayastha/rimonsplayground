@@ -125,6 +125,10 @@ a {
     z-index: 1;
     top: 0;
     left: 0;
+    transition: width 0.5s;
+}
+.images-2-1:hover {
+    width: 210px;
 }
 .images-2-2 {
     height: 130px;
@@ -132,6 +136,11 @@ a {
     bottom: 5px;
     left: 40px;
     border: 1px solid white;
+    transition: z-index 0.5s, height 0.5s;
+}
+.images-2-2:hover {
+    height: 150px;
+    z-index:2;
 }
 .gif-container {
     display: flex;
@@ -142,4 +151,8 @@ a {
 .rock-paper-gif {
     width: 80%;
     max-width: 400px;
+    transition: max-width 0.5s;
+}
+.rock-paper-gif:hover {
+    max-width: 420px;
 }
