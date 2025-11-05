@@ -10,23 +10,111 @@ html, body {
     background-position: center; 
     height: 100vh;
 }
-.flex-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5%;
+@media (max-width: 300px) {
+    .button {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #art {
+        top: 50%;
+        left: 30%;
+        background-image: url('../images/art1.png');
+    }
+    #art:hover {
+        background-image: url('../images/art2.png');
+    }
+    #code {
+        top: 50%;
+        left: 9%;
+        background-image: url('../images/coding1.png');
+    }
+    #code:hover {
+        background-image: url('../images/coding2.png');
+    }
 }
-.buttons {
-    flex-basis: 300px;
-    flex-shrink: 1;
-    min-width: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-right: 10%;
+@media (min-width: 300.02px) and (max-width: 400px) {
+    .button {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #art {
+        top: 50%;
+        left: 50%;
+        background-image: url('../images/art1.png');
+    }
+    #art:hover {
+        background-image: url('../images/art2.png');
+    }
+    #code {
+        top: 50%;
+        left: 13%;
+        background-image: url('../images/coding1.png');
+    }
+    #code:hover {
+        background-image: url('../images/coding2.png');
+    }
 }
-@media (max-width: 750px) {
+@media (min-width: 400.02px) and (max-width: 500px) {
+    .button {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #art {
+        top: 50%;
+        left: 50%;
+        background-image: url('../images/art1.png');
+    }
+    #art:hover {
+        background-image: url('../images/art2.png');
+    }
+    #code {
+        top: 50%;
+        left: 16%;
+        background-image: url('../images/coding1.png');
+    }
+    #code:hover {
+        background-image: url('../images/coding2.png');
+    }
+}
+@media (min-width: 500.02px) and (max-width: 600px) {
+    .button {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #art {
+        top: 50%;
+        left: 50%;
+        background-image: url('../images/art1.png');
+    }
+    #art:hover {
+        background-image: url('../images/art2.png');
+    }
+    #code {
+        top: 50%;
+        left: 21%;
+        background-image: url('../images/coding1.png');
+    }
+    #code:hover {
+        background-image: url('../images/coding2.png');
+    }
+}
+@media (min-width: 600.02px) and (max-width: 750px) {
     .button {
         position: absolute;
         width: 150px;
@@ -52,7 +140,33 @@ html, body {
         background-image: url('../images/coding2.png');
     }
 }
-@media (min-width: 750.02px) {
+@media (min-width: 750.02px) and (max-width: 850px) {
+    .button {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #art {
+        top: 50%;
+        left: 50%;
+        background-image: url('../images/art1.png');
+    }
+    #art:hover {
+        background-image: url('../images/art2.png');
+    }
+    #code {
+        top: 50%;
+        left: 26%;
+        background-image: url('../images/coding1.png');
+    }
+    #code:hover {
+        background-image: url('../images/coding2.png');
+    }
+}
+@media (min-width: 850.02px) {
     .button {
         position: absolute;
         width: 15%;
