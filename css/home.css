@@ -10,30 +10,24 @@ html, body {
     background-position: center; 
     height: 100vh;
 }
+.images {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
 @media (max-width: 300px) {
     .button {
         position: absolute;
         width: 150px;
         height: 150px;
-        object-fit: contain;
-        background-size: contain;
-        background-repeat: no-repeat;
     }
     #art {
         top: 50%;
         left: 30%;
-        background-image: url('../images/art1.png');
-    }
-    #art:hover {
-        background-image: url('../images/art2.png');
     }
     #code {
         top: 50%;
         left: 9%;
-        background-image: url('../images/coding1.png');
-    }
-    #code:hover {
-        background-image: url('../images/coding2.png');
     }
 }
 @media (min-width: 300.02px) and (max-width: 400px) {
@@ -41,25 +35,14 @@ html, body {
         position: absolute;
         width: 150px;
         height: 150px;
-        object-fit: contain;
-        background-size: contain;
-        background-repeat: no-repeat;
     }
     #art {
         top: 50%;
         left: 50%;
-        background-image: url('../images/art1.png');
-    }
-    #art:hover {
-        background-image: url('../images/art2.png');
     }
     #code {
         top: 50%;
         left: 13%;
-        background-image: url('../images/coding1.png');
-    }
-    #code:hover {
-        background-image: url('../images/coding2.png');
     }
 }
 @media (min-width: 400.02px) and (max-width: 500px) {
@@ -67,25 +50,14 @@ html, body {
         position: absolute;
         width: 150px;
         height: 150px;
-        object-fit: contain;
-        background-size: contain;
-        background-repeat: no-repeat;
     }
     #art {
         top: 50%;
         left: 50%;
-        background-image: url('../images/art1.png');
-    }
-    #art:hover {
-        background-image: url('../images/art2.png');
     }
     #code {
         top: 50%;
         left: 16%;
-        background-image: url('../images/coding1.png');
-    }
-    #code:hover {
-        background-image: url('../images/coding2.png');
     }
 }
 @media (min-width: 500.02px) and (max-width: 600px) {
@@ -93,25 +65,14 @@ html, body {
         position: absolute;
         width: 150px;
         height: 150px;
-        object-fit: contain;
-        background-size: contain;
-        background-repeat: no-repeat;
     }
     #art {
         top: 50%;
         left: 50%;
-        background-image: url('../images/art1.png');
-    }
-    #art:hover {
-        background-image: url('../images/art2.png');
     }
     #code {
         top: 50%;
         left: 21%;
-        background-image: url('../images/coding1.png');
-    }
-    #code:hover {
-        background-image: url('../images/coding2.png');
     }
 }
 @media (min-width: 600.02px) and (max-width: 750px) {
@@ -119,25 +80,14 @@ html, body {
         position: absolute;
         width: 150px;
         height: 150px;
-        object-fit: contain;
-        background-size: contain;
-        background-repeat: no-repeat;
     }
     #art {
         top: 50%;
         left: 50%;
-        background-image: url('../images/art1.png');
-    }
-    #art:hover {
-        background-image: url('../images/art2.png');
     }
     #code {
         top: 50%;
         left: 23%;
-        background-image: url('../images/coding1.png');
-    }
-    #code:hover {
-        background-image: url('../images/coding2.png');
     }
 }
 @media (min-width: 750.02px) and (max-width: 850px) {
@@ -145,25 +95,14 @@ html, body {
         position: absolute;
         width: 150px;
         height: 150px;
-        object-fit: contain;
-        background-size: contain;
-        background-repeat: no-repeat;
     }
     #art {
         top: 50%;
         left: 50%;
-        background-image: url('../images/art1.png');
-    }
-    #art:hover {
-        background-image: url('../images/art2.png');
     }
     #code {
         top: 50%;
         left: 26%;
-        background-image: url('../images/coding1.png');
-    }
-    #code:hover {
-        background-image: url('../images/coding2.png');
     }
 }
 @media (min-width: 850.02px) {
@@ -171,24 +110,13 @@ html, body {
         position: absolute;
         width: 15%;
         height: 15%;
-        object-fit: contain;
-        background-size: contain;
-        background-repeat: no-repeat;
     }
     #art {
         top: 50%;
         left: 50%;
-        background-image: url('../images/art1.png');
-    }
-    #art:hover {
-        background-image: url('../images/art2.png');
     }
     #code {
         top: 50%;
         left: 30%;
-        background-image: url('../images/coding1.png');
-    }
-    #code:hover {
-        background-image: url('../images/coding2.png');
     }
 }

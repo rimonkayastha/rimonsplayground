@@ -2,16 +2,17 @@
 <head>
     <title>Rimon's Playground</title>
     <link rel="stylesheet" href="./css/home.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="background">
         <div class="button" id="art">
             <a href="./html/art.html">
+                <img class="images art-image" src="./images/art1.png">
             </a>
         </div>
         <div class="button" id="code">
             <a href="./html/code.html">
+                <img class="images code-image" src="./images/coding1.png">
             </a>
         </div>
         <!-- <div class="media">
@@ -26,5 +27,33 @@
         </div> -->
     </div>
     <script>
+        art_button = document.querySelector('.art-image');
+        code_button = document.querySelector('.code-image');
+        media_button = document.querySelector('.media-image');
+        robotics_button = document.querySelector('.robotics-image');
+        art_button.addEventListener('mouseover', function() {
+            this.src="./images/art2.png"
+        })
+        art_button.addEventListener('mouseout', function() {
+            this.src="./images/art1.png"
+        })
+        code_button.addEventListener('mouseover', function() {
+            this.src="./images/coding2.png"
+        })
+        code_button.addEventListener('mouseout', function() {
+            this.src="./images/coding1.png"
+        })
+        media_button.addEventListener('mouseover', function() {
+            this.src="./images/media2.png"
+        })
+        media_button.addEventListener('mouseout', function() {
+            this.src="./images/media1.png"
+        })
+        robotics_button.addEventListener('mouseover', function() {
+            this.src="./images/robotics2.png"
+        })
+        robotics_button.addEventListener('mouseout', function() {
+            this.src="./images/robotics1.png"
+        })
     </script>
 </body>
