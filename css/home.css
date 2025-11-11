@@ -49,23 +49,23 @@ html, body {
         height: 150px;
     }
     #art {
-        top: 35%;
+        top: 45%;
         left: 50%;
     }
     #code {
-        top: 35%;
+        top: 45%;
         left: 13%;
     }
     #music {
-        top: 48%;
+        top: 58%;
         left: 48%;
     }
     #media {
-        top: 48%;
+        top: 58%;
         left: 10%;
     }
     #about-me {
-        top: 58%;
+        top: 68%;
         left: 30%;
     }
 }
