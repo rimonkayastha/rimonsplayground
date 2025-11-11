@@ -22,12 +22,24 @@ html, body {
         height: 150px;
     }
     #art {
-        top: 50%;
+        top: 35%;
         left: 30%;
     }
     #code {
-        top: 50%;
+        top: 35%;
         left: 9%;
+    }
+    #music {
+        top: 48%;
+        left: 48%;
+    }
+    #media {
+        top: 48%;
+        left: 6%;
+    }
+    #about-me {
+        top: 58%;
+        left: 30%;
     }
 }
 @media (min-width: 300.02px) and (max-width: 400px) {
@@ -37,12 +49,24 @@ html, body {
         height: 150px;
     }
     #art {
-        top: 50%;
+        top: 35%;
         left: 50%;
     }
     #code {
-        top: 50%;
+        top: 35%;
         left: 13%;
+    }
+    #music {
+        top: 48%;
+        left: 48%;
+    }
+    #media {
+        top: 48%;
+        left: 10%;
+    }
+    #about-me {
+        top: 58%;
+        left: 30%;
     }
 }
 @media (min-width: 400.02px) and (max-width: 500px) {
@@ -52,12 +76,24 @@ html, body {
         height: 150px;
     }
     #art {
-        top: 50%;
+        top: 35%;
         left: 50%;
     }
     #code {
-        top: 50%;
+        top: 35%;
         left: 16%;
+    }
+    #music {
+        top: 48%;
+        left: 48%;
+    }
+    #media {
+        top: 48%;
+        left: 13%;
+    }
+    #about-me {
+        top: 58%;
+        left: 30%;
     }
 }
 @media (min-width: 500.02px) and (max-width: 600px) {
@@ -67,12 +103,24 @@ html, body {
         height: 150px;
     }
     #art {
-        top: 50%;
+        top: 35%;
         left: 50%;
     }
     #code {
-        top: 50%;
+        top: 35%;
         left: 21%;
+    }
+    #music {
+        top: 48%;
+        left: 48%;
+    }
+    #media {
+        top: 48%;
+        left: 18%;
+    }
+    #about-me {
+        top: 58%;
+        left: 30%;
     }
 }
 @media (min-width: 600.02px) and (max-width: 750px) {
@@ -82,12 +130,24 @@ html, body {
         height: 150px;
     }
     #art {
-        top: 50%;
+        top: 35%;
         left: 50%;
     }
     #code {
-        top: 50%;
+        top: 35%;
         left: 23%;
+    }
+    #music {
+        top: 48%;
+        left: 48%;
+    }
+    #media {
+        top: 48%;
+        left: 20%;
+    }
+    #about-me {
+        top: 58%;
+        left: 30%;
     }
 }
 @media (min-width: 750.02px) and (max-width: 850px) {
@@ -97,12 +157,24 @@ html, body {
         height: 150px;
     }
     #art {
-        top: 50%;
+        top: 40%;
         left: 50%;
     }
     #code {
-        top: 50%;
+        top: 40%;
         left: 26%;
+    }
+    #music {
+        top: 55%;
+        left: 48%;
+    }
+    #media {
+        top: 55%;
+        left: 23%;
+    }
+    #about-me {
+        top: 12%;
+        left: 70%;
     }
 }
 @media (min-width: 850.02px) {
@@ -112,11 +184,23 @@ html, body {
         height: 15%;
     }
     #art {
-        top: 50%;
+        top: 40%;
         left: 50%;
     }
     #code {
-        top: 50%;
+        top: 40%;
         left: 30%;
+    }
+    #music {
+        top: 55%;
+        left: 48%;
+    }
+    #media {
+        top: 55%;
+        left: 27%;
+    }
+    #about-me {
+        top: 12%;
+        left: 70%;
     }
 }

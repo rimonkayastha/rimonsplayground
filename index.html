@@ -11,17 +11,28 @@
                 <img class="images art-image" src="./images/art1.png">
             </a>
         </div>
+        
         <div class="button" id="code">
             <a href="./html/code.html">
                 <img class="images code-image" src="./images/coding1.png">
             </a>
         </div>
-        <!-- <div class="media">
+        <!-- <div class="button" id="about-me">
+            <a href="./html/about-me.html">
+                <img class="images aboutme-image" src="./images/aboutme.png">
+            </a>
+        </div>
+        <div class="button" id="media">
             <a href="./html/media.html">
                 <img class="images media-image" src="./images/media1.png">
             </a>
+        </div> -->
+        <div class="button" id="music">
+            <a href="./html/music.html">
+                <img class="images music-image" src="./images/music_logo.png">
+            </a>
         </div>
-        <div class="robotics">
+        <!-- <div class="robotics">
             <a href="./html/robotics.html">
                 <img class="images robotics-image" src="./images/robotics1.png">
             </a>
@@ -31,6 +42,8 @@
         art_button = document.querySelector('.art-image');
         code_button = document.querySelector('.code-image');
         media_button = document.querySelector('.media-image');
+        music_button = document.querySelector('.music-image');
+        aboutme_button = document.querySelector('.aboutme-image');
         robotics_button = document.querySelector('.robotics-image');
         art_button.addEventListener('mouseover', function() {
             this.src="./images/art2.png"
@@ -44,11 +57,23 @@
         code_button.addEventListener('mouseout', function() {
             this.src="./images/coding1.png"
         })
+        music_button.addEventListener('mouseover', function() {
+            this.src="./images/music_logo_blue.png"
+        })
+        music_button.addEventListener('mouseout', function() {
+            this.src="./images/music_logo.png"
+        })
         media_button.addEventListener('mouseover', function() {
             this.src="./images/media2.png"
         })
         media_button.addEventListener('mouseout', function() {
             this.src="./images/media1.png"
+        })
+        aboutme_button.addEventListener('mouseover', function() {
+            this.src="./images/aboutme2.png"
+        })
+        aboutme_button.addEventListener('mouseout', function() {
+            this.src="./images/aboutme.png"
         })
         robotics_button.addEventListener('mouseover', function() {
             this.src="./images/robotics2.png"
