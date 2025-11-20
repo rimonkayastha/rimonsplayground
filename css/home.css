@@ -1,25 +1,107 @@
 html, body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
+
 .background {
-    background-image: url('../images/rimonsplayground_background1.jpg'); 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-position: center; 
+    position: relative;
+    width: 100%;
     height: 100vh;
+    background-image: url('../images/rimonsplayground_background1.jpg'); 
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .images {
+    position: relative;
     height: 100%;
     width: 100%;
     object-fit: contain;
 }
-@media (max-width: 300px) {
+.desk-note {
+    position: absolute;
+    bottom: 15%; /* Position the desk note area */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 2vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8vh;
+}
+
+.monitor-screen {
+    position: absolute;
+    top: 15%;
+    right: 5%; /* Use left instead of right for better control */
+    transform: translateX(-10%);
+}
+
+.button {
+    position: relative; /* relative within flex containers */
+    width: clamp(80px, 12vw, 140px);
+    height: clamp(80px, 12vw, 140px);
+}
+
+.images {
+    transition: transform 0.2s ease; /* Smooth hover effect */
+}
+
+.images:hover {
+    transform: scale(1.1); /* Optional: slight zoom on hover */
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
     .button {
-        position: absolute;
-        width: 150px;
-        height: 150px;
+        width: clamp(60px, 18vw, 100px);
+        height: clamp(60px, 18vw, 100px);
+    }
+    
+    .desk-note {
+        bottom: 20%;
+        gap: 4vw;
+    }
+    
+    .monitor-screen {
+        top: 15%;
+        right: 10%;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .button {
+        width: clamp(90px, 14vw, 120px);
+        height: clamp(90px, 14vw, 120px);
+    }
+    
+    .desk-note {
+        bottom: 18%;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1440px) {
+    .button {
+        width: clamp(100px, 10vw, 160px);
+        height: clamp(100px, 10vw, 160px);
+    }
+}
+
+
+/* @media (max-width: 300px) {
+    .button {
+        position: relative;
+        width: 12vw;
+        height: 12vw;
     }
     #art {
         top: 45%;
@@ -203,4 +285,4 @@ html, body {
         top: 12%;
         left: 70%;
     }
-}
+} */
