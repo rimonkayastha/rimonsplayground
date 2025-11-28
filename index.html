@@ -1,97 +1,100 @@
-<!DOCTYPE HTML>
-<head>
-    <title>Rimon's Playground</title>
-    <link rel="stylesheet" href="./css/home.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <div class="background">
-        <div class="monitor-screen">
-            <div class="button" id="about-me">
-                <a href="https://drive.google.com/file/d/1AzL2SXSJypIT_EyQ-HJV7noQtE_NOgHK/view?usp=sharing">
-                    <img class="images aboutme-image" src="./images/aboutme.png">
-                </a>
-            </div>
+    <!DOCTYPE HTML>
+    <head>
+        <title>Rimon's Playground</title>
+        <link rel="stylesheet" href="./css/home.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="window-button" id="about-me">
+            <a href="https://drive.google.com/file/d/1AzL2SXSJypIT_EyQ-HJV7noQtE_NOgHK/view?usp=sharing">
+                <img class="window-images aboutme-image" src="./images/aboutme.png">
+            </a>
+        </div>
+        <div class="window-button" id="gallery">
+            <a href="https://vsco.co/rimonkayastha/gallery">
+                <img class="window-images gallery-image" src="./images/gallery.png">
+            </a>
         </div>
 
-        <div class="desk-note">
-            <div>
-                <div class="button" id="art">
-                    <a href="./html/art.html">
-                        <img class="images art-image" src="./images/art1.png">
-                    </a>
-                </div>
-                
-                <div class="button" id="code">
-                    <a href="./html/code.html">
-                        <img class="images code-image" src="./images/coding1.png">
-                    </a>
-                </div>
-            </div>
+        <div class="poster-button" id="art">
+            <a href="./html/art.html">
+                <img class="poster-images art-image" src="./images/art1.png">
+            </a>
+        </div>
+        
+        <div class="poster-button" id="code">
+            <a href="./html/code.html">
+                <img class="poster-images code-image" src="./images/coding1.png">
+            </a>
+        </div>
+        <!-- <div class="poster-button" id="media">
+            <a href="./html/media.html">
+                <img class="poster-images media-image" src="./images/media1.png">
+            </a>
+        </div> -->
+        <div class="poster-button" id="music">
+            <a href="./html/music.html">
+                <img class="poster-images music-image" src="./images/music_logo.png">
+            </a>
+        </div>
+        <!-- <div class="poster-button" id="robotics">
+            <a href="./html/robotics.html">
+                <img class="poster-images robotics-image" src="./images/robotics1.png">
+            </a>
+        </div> -->
             
-
-            <!-- <div class="button" id="media">
-                <a href="./html/media.html">
-                    <img class="images media-image" src="./images/media1.png">
-                </a>
-            </div> -->
-            <div class="button" id="music">
-                <a href="./html/music.html">
-                    <img class="images music-image" src="./images/music_logo.png">
-                </a>
-            </div>
-            <!-- <div class="robotics">
-                <a href="./html/robotics.html">
-                    <img class="images robotics-image" src="./images/robotics1.png">
-                </a>
-            </div> -->
+            
+            
         </div>
-        
-        
-        
-    </div>
-    <script>
-        art_button = document.querySelector('.art-image');
-        code_button = document.querySelector('.code-image');
-        media_button = document.querySelector('.media-image');
-        music_button = document.querySelector('.music-image');
-        aboutme_button = document.querySelector('.aboutme-image');
-        robotics_button = document.querySelector('.robotics-image');
-        art_button.addEventListener('mouseover', function() {
-            this.src="./images/art2.png"
-        })
-        art_button.addEventListener('mouseout', function() {
-            this.src="./images/art1.png"
-        })
-        code_button.addEventListener('mouseover', function() {
-            this.src="./images/coding2.png"
-        })
-        code_button.addEventListener('mouseout', function() {
-            this.src="./images/coding1.png"
-        })
-        music_button.addEventListener('mouseover', function() {
-            this.src="./images/music_logo_blue.png"
-        })
-        music_button.addEventListener('mouseout', function() {
-            this.src="./images/music_logo.png"
-        })
-        aboutme_button.addEventListener('mouseover', function() {
-            this.src="./images/aboutme2.png"
-        })
-        aboutme_button.addEventListener('mouseout', function() {
-            this.src="./images/aboutme.png"
-        })
-        media_button.addEventListener('mouseover', function() {
-            this.src="./images/media2.png"
-        })
-        media_button.addEventListener('mouseout', function() {
-            this.src="./images/media1.png"
-        })
-        robotics_button.addEventListener('mouseover', function() {
-            this.src="./images/robotics2.png"
-        })
-        robotics_button.addEventListener('mouseout', function() {
-            this.src="./images/robotics1.png"
-        })
-    </script>
-</body>
+        <script>
+            art_button = document.querySelector('.art-image');
+            code_button = document.querySelector('.code-image');
+            media_button = document.querySelector('.media-image');
+            music_button = document.querySelector('.music-image');
+            aboutme_button = document.querySelector('.aboutme-image');
+            gallery_button = document.querySelector('.gallery-image');
+            robotics_button = document.querySelector('.robotics-image');
+            art_button.addEventListener('mouseover', function() {
+                this.src="./images/art2.png"
+            })
+            art_button.addEventListener('mouseout', function() {
+                this.src="./images/art1.png"
+            })
+            code_button.addEventListener('mouseover', function() {
+                this.src="./images/coding2.png"
+            })
+            code_button.addEventListener('mouseout', function() {
+                this.src="./images/coding1.png"
+            })
+            music_button.addEventListener('mouseover', function() {
+                this.src="./images/music_logo_blue.png"
+            })
+            music_button.addEventListener('mouseout', function() {
+                this.src="./images/music_logo.png"
+            })
+            aboutme_button.addEventListener('mouseover', function() {
+                this.src="./images/aboutme2.png"
+            })
+            aboutme_button.addEventListener('mouseout', function() {
+                this.src="./images/aboutme.png"
+            })
+            media_button.addEventListener('mouseover', function() {
+                this.src="./images/media2.png"
+            })
+            media_button.addEventListener('mouseout', function() {
+                this.src="./images/media1.png"
+            })
+            gallery_button.addEventListener('mouseover', function() {
+                this.src="./images/gallery2.png"
+            })
+            gallery_button.addEventListener('mouseout', function() {
+                this.src="./images/gallery.png"
+            })
+            robotics_button.addEventListener('mouseover', function() {
+                this.src="./images/robotics2.png"
+            })
+            robotics_button.addEventListener('mouseout', function() {
+                this.src="./images/robotics1.png"
+            })
+        </script>
+    </body>

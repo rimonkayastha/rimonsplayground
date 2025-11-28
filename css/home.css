@@ -1,288 +1,1014 @@
 html, body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
     overflow: hidden;
 }
-
-.background {
-    position: relative;
-    width: 100%;
-    height: 100vh;
+body {
     background-image: url('../images/rimonsplayground_background1.jpg'); 
-    background-position: center center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh;
 }
 .images {
-    position: relative;
     height: 100%;
     width: 100%;
     object-fit: contain;
 }
-.desk-note {
-    position: absolute;
-    bottom: 15%; /* Position the desk note area */
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 2vw;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 8vh;
-}
-
-.monitor-screen {
-    position: absolute;
-    top: 15%;
-    right: 5%; /* Use left instead of right for better control */
-    transform: translateX(-10%);
-}
-
-.button {
-    position: relative; /* relative within flex containers */
-    width: clamp(80px, 12vw, 140px);
-    height: clamp(80px, 12vw, 140px);
-}
-
-.images {
-    transition: transform 0.2s ease; /* Smooth hover effect */
-}
-
-.images:hover {
-    transform: scale(1.1); /* Optional: slight zoom on hover */
-}
-
-/* Mobile adjustments */
-@media (max-width: 767px) {
-    .button {
-        width: clamp(60px, 18vw, 100px);
-        height: clamp(60px, 18vw, 100px);
+@media (max-aspect-ratio: 3.56/1) and (min-aspect-ratio: 3.15/1) {
+    .window-button {
+        display: inline-block;
+        position: absolute;
+        height: 10%;
     }
-    
-    .desk-note {
-        bottom: 20%;
-        gap: 4vw;
+    .poster-button {
+        display: inline-block;
+        position: absolute;
+        height: 20%;
     }
-    
-    .monitor-screen {
-        top: 15%;
-        right: 10%;
+    .window-images {
+        height: 100%;
+    }
+    .poster-images {
+        height: 100%;
+    }
+    #about-me {
+        top: 1%;
+        right: 17%;
+    }
+    #gallery {
+        top: 7%;
+        right: 18%;
+    }
+    #art {
+        top: 38%;
+        left: 30%;
+    }
+    #code {
+        top: 40%;
+        left: 50%;
+    }
+    #robotics {
+        top: 55%;
+        left: 39%;
+    }
+    #music {
+        top: 68%;
+        left: 28%;
+    }
+    #media {
+        top: 75%;
+        left: 50%;
     }
 }
-
-/* Tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .button {
-        width: clamp(90px, 14vw, 120px);
-        height: clamp(90px, 14vw, 120px);
+@media (max-aspect-ratio: 3.15/1) and (min-aspect-ratio: 2.77/1) {
+    .window-button {
+        display: inline-block;
+        position: absolute;
+        height: 12%;
     }
-    
-    .desk-note {
-        bottom: 18%;
+    .poster-button {
+        display: inline-block;
+        position: absolute;
+        height: 18%;
+    }
+    .window-images {
+        height: 100%;
+    }
+    .poster-images {
+        height: 100%;
+    }
+    #about-me {
+        top: 3%;
+        right: 17%;
+    }
+    #gallery {
+        top: 10%;
+        right: 18%;
+    }
+    #art {
+        top: 38%;
+        left: 30%;
+    }
+    #code {
+        top: 40%;
+        left: 50%;
+    }
+    #robotics {
+        top: 55%;
+        left: 39%;
+    }
+    #music {
+        top: 65%;
+        left: 28%;
+    }
+    #media {
+        top: 72%;
+        left: 50%;
+    }
+}
+@media (max-aspect-ratio: 2.77/1) and (min-aspect-ratio: 2.58/1) {
+    .window-button {
+        display: inline-block;
+        position: absolute;
+        height: 12%;
+    }
+    .poster-button {
+        display: inline-block;
+        position: absolute;
+        height: 18%;
+    }
+    .window-images {
+        height: 100%;
+    }
+    .poster-images {
+        height: 100%;
+    }
+    #about-me {
+        top: 6%;
+        right: 17%;
+    }
+    #gallery {
+        top: 13%;
+        right: 18%;
+    }
+    #art {
+        top: 39%;
+        left: 29%;
+    }
+    #code {
+        top: 40%;
+        left: 50%;
+    }
+    #robotics {
+        top: 50%;
+        left: 39%;
+    }
+    #music {
+        top: 62%;
+        left: 27%;
+    }
+    #media {
+        top: 68%;
+        left: 50%;
+    }
+}
+@media (max-aspect-ratio: 2.58/1)  and (min-aspect-ratio: 2.33/1){
+    .window-button {
+        display: inline-block;
+        position: absolute;
+        height: 10%;
+    }
+    .poster-button {
+        display: inline-block;
+        position: absolute;
+        height: 15%;
+    }
+    .window-images {
+        height: 100%;
+    }
+    .poster-images {
+        height: 100%;
+    }
+    #about-me {
+        top: 11%;
+        right: 17%;
+    }
+    #gallery {
+        top: 17%;
+        right: 18%;
+    }
+    #art {
+        top: 41%;
+        left: 29%;
+    }
+    #code {
+        top: 43%;
+        left: 51%;
+    }
+    #robotics {
+        top: 50%;
+        left: 39%;
+    }
+    #music {
+        top: 62%;
+        left: 27%;
+    }
+    #media {
+        top: 66%;
+        left: 50%;
+    }
+}
+@media (max-aspect-ratio: 2.33/1) and (min-aspect-ratio: 2.05/1) {
+    .window-button {
+        display: inline-block;
+        position: absolute;
+        height: 9%;
+    }
+    .poster-button {
+        display: inline-block;
+        position: absolute;
+        height: 13%;
+    }
+    .window-images {
+        height: 100%;
+    }
+    .poster-images {
+        height: 100%;
+    }
+    #about-me {
+        top: 16%;
+        right: 17%;
+    }
+    #gallery {
+        top: 21%;
+        right: 18%;
+    }
+    #art {
+        top: 41%;
+        left: 29%;
+    }
+    #code {
+        top: 43%;
+        left: 51%;
+    }
+    #robotics {
+        top: 50%;
+        left: 39%;
+    }
+    #music {
+        top: 62%;
+        left: 27%;
+    }
+    #media {
+        top: 66%;
+        left: 50%;
     }
 }
 
-/* Large screens */
-@media (min-width: 1440px) {
-    .button {
-        width: clamp(100px, 10vw, 160px);
-        height: clamp(100px, 10vw, 160px);
+@media (max-aspect-ratio: 2.05/1) and (min-aspect-ratio: 1.94/1) {
+    .window-button {
+        display: inline-block;
+        position: absolute;
+        height: 9%;
+    }
+    .poster-button {
+        display: inline-block;
+        position: absolute;
+        height: 12%;
+    }
+    .window-images {
+        height: 100%;
+    }
+    .poster-images {
+        height: 100%;
+    }
+    #about-me {
+        top: 18%;
+        right: 16%;
+    }
+    #gallery {
+        top: 23%;
+        right: 17%;
+    }
+    #art {
+        top: 43%;
+        left: 30%;
+    }
+    #code {
+        top: 45%;
+        left: 51%;
+    }
+    #robotics {
+        top: 52%;
+        left: 39%;
+    }
+    #music {
+        top: 60%;
+        left: 28%;
+    }
+    #media {
+        top: 64%;
+        left: 50%;
     }
 }
 
+@media (max-aspect-ratio: 1.94/1) and (min-aspect-ratio: 1.77/1){
+    .window-button {
+        display: inline-block;
+        position: absolute;
+        height: 8%;
+    }
+    .poster-button {
+        display: inline-block;
+        position: absolute;
+        height: 12%;
+    }
+    .window-images {
+        height: 100%;
+    }
+    .poster-images {
+        height: 100%;
+    }
+    #about-me {
+        top: 20.5%;
+        right: 16%;
+    }
+    #gallery {
+        top: 25%;
+        right: 17%;
+    }
+    #art {
+        top: 43%;
+        left: 30%;
+    }
+    #code {
+        top: 45%;
+        left: 51%;
+    }
+    #robotics {
+        top: 52%;
+        left: 39%;
+    }
+    #music {
+        top: 60%;
+        left: 28%;
+    }
+    #media {
+        top: 63%;
+        left: 50%;
+    }
+}
 
-/* @media (max-width: 300px) {
-    .button {
-        position: relative;
-        width: 12vw;
-        height: 12vw;
+@media (max-aspect-ratio: 1.77/1) and (min-aspect-ratio: 1.62/1) {
+    .window-button {
+        display: inline-block;
+        position: absolute;
+        height: 7.5%;
+    }
+    .poster-button {
+        display: inline-block;
+        position: absolute;
+        height: 10%;
+    }
+    .window-images {
+        height: 100%;
+    }
+    .poster-images {
+        height: 100%;
+    }
+    #about-me {
+        top: 23%;
+        right: 16%;
+    }
+    #gallery {
+        top: 27%;
+        right: 17%;
+    }
+    #art {
+        top: 43%;
+        left: 30%;
+    }
+    #code {
+        top: 45%;
+        left: 51%;
+    }
+    #robotics {
+        top: 52%;
+        left: 39%;
+    }
+    #music {
+        top: 60%;
+        left: 28%;
+    }
+    #media {
+        top: 63%;
+        left: 50%;
+    }
+}
+
+@media (max-aspect-ratio: 1.62/1) and (min-aspect-ratio: 1.48/1){
+    .window-button {
+        display: inline-block;
+        position: absolute;
+        height: 7.5%;
+    }
+    .poster-button {
+        display: inline-block;
+        position: absolute;
+        height: 9%;
+    }
+    .window-images {
+        height: 100%;
+    }
+    .poster-images {
+        height: 100%;
+    }
+    #about-me {
+        top: 25%;
+        right: 16%;
+    }
+    #gallery {
+        top: 29%;
+        right: 17%;
     }
     #art {
         top: 45%;
         left: 30%;
     }
     #code {
+        top: 47%;
+        left: 51%;
+    }
+    #robotics {
+        top: 52%;
+        left: 39%;
+    }
+    #music {
+        top: 58%;
+        left: 28%;
+    }
+    #media {
+        top: 61%;
+        left: 50%;
+    }
+}
+
+@media (max-aspect-ratio: 1.48/1) and (min-aspect-ratio: 1.37/1) {
+    .window-button {
+        display: inline-block;
+        position: absolute;
+        height: 7%;
+    }
+    .poster-button {
+        display: inline-block;
+        position: absolute;
+        height: 9%;
+    }
+    .window-images {
+        height: 100%;
+    }
+    .poster-images {
+        height: 100%;
+    }
+    #about-me {
+        top: 26.5%;
+        right: 16%;
+    }
+    #gallery {
+        top: 30.5%;
+        right: 17%;
+    }
+    #art {
+        top: 45%;
+        left: 29%;
+    }
+    #code {
+        top: 47%;
+        left: 49%;
+    }
+    #robotics {
+        top: 51%;
+        left: 38%;
+    }
+    #music {
+        top: 57%;
+        left: 28%;
+    }
+    #media {
+        top: 59%;
+        left: 50%;
+    }
+}
+
+@media (max-aspect-ratio: 1.37/1) and (min-aspect-ratio: 1.28/1){
+    .window-button {
+        display: inline-block;
+        position: absolute;
+        height: 6%;
+    }
+    .poster-button {
+        display: inline-block;
+        position: absolute;
+        height: 8%;
+    }
+    .window-images {
+        height: 100%;
+    }
+    .poster-images {
+        height: 100%;
+    }
+    #about-me {
+        top: 27.5%;
+        right: 14%;
+    }
+    #gallery {
+        top: 31%;
+        right: 15%;
+    }
+    #art {
+        top: 45%;
+        left: 29%;
+    }
+    #code {
+        top: 47%;
+        left: 49%;
+    }
+    #robotics {
+        top: 51%;
+        left: 38%;
+    }
+    #music {
+        top: 57%;
+        left: 28%;
+    }
+    #media {
+        top: 59%;
+        left: 50%;
+    }
+}
+
+@media (max-aspect-ratio: 1.28/1) and (min-aspect-ratio: 1.19/1) {
+    .window-button {
+        display: inline-block;
+        position: absolute;
+        height: 6%;
+    }
+    .poster-button {
+        display: inline-block;
+        position: absolute;
+        height: 8%;
+    }
+    .window-images {
+        height: 100%;
+    }
+    .poster-images {
+        height: 100%;
+    }
+    #about-me {
+        top: 27.5%;
+        right: 12%;
+    }
+    #gallery {
+        top: 31%;
+        right: 13%;
+    }
+    #art {
+        top: 45%;
+        left: 26%;
+    }
+    #code {
+        top: 47%;
+        left: 52%;
+    }
+    #robotics {
+        top: 51%;
+        left: 38%;
+    }
+    #music {
+        top: 57%;
+        left: 24%;
+    }
+    #media {
+        top: 59%;
+        left: 52%;
+    }
+}
+
+@media (max-aspect-ratio: 1.19/1) and (min-aspect-ratio: 1.13/1) {
+    .window-button {
+        display: inline-block;
+        position: absolute;
+        height: 6%;
+    }
+    .poster-button {
+        display: inline-block;
+        position: absolute;
+        height: 8%;
+    }
+    .window-images {
+        height: 100%;
+    }
+    .poster-images {
+        height: 100%;
+    }
+    #about-me {
+        top: 27.5%;
+        right: 9%;
+    }
+    #gallery {
+        top: 31%;
+        right: 10%;
+    }
+    #art {
+        top: 45%;
+        left: 26%;
+    }
+    #code {
+        top: 47%;
+        left: 52%;
+    }
+    #robotics {
+        top: 51%;
+        left: 38%;
+    }
+    #music {
+        top: 57%;
+        left: 24%;
+    }
+    #media {
+        top: 59%;
+        left: 52%;
+    }
+}
+
+@media (max-aspect-ratio: 1.13/1) and (min-aspect-ratio: 1.05/1){
+    .window-button {
+        display: inline-block;
+        position: absolute;
+        height: 6%;
+    }
+    .poster-button {
+        display: inline-block;
+        position: absolute;
+        height: 8%;
+    }
+    .window-images {
+        height: 100%;
+    }
+    .poster-images {
+        height: 100%;
+    }
+    #about-me {
+        top: 27.5%;
+        right: 6%;
+    }
+    #gallery {
+        top: 31%;
+        right: 7%;
+    }
+    #art {
+        top: 45%;
+        left: 23%;
+    }
+    #code {
+        top: 47%;
+        left: 52%;
+    }
+    #robotics {
+        top: 51%;
+        left: 35%;
+    }
+    #music {
+        top: 57%;
+        left: 20%;
+    }
+    #media {
+        top: 59%;
+        left: 52%;
+    }
+}
+
+@media (max-aspect-ratio: 1.05/1) and (min-aspect-ratio: 0.95/1) {
+    .window-button {
+        display: inline-block;
+        position: absolute;
+        height: 6%;
+    }
+    .poster-button {
+        display: inline-block;
+        position: absolute;
+        height: 8%;
+    }
+    .window-images {
+        height: 100%;
+    }
+    .poster-images {
+        height: 100%;
+    }
+    #about-me {
+        top: 27.5%;
+        right: 2%;
+    }
+    #gallery {
+        top: 31%;
+        right: 3%;
+    }
+    #art {
+        top: 45%;
+        left: 23%;
+    }
+    #code {
+        top: 47%;
+        left: 52%;
+    }
+    #robotics {
+        top: 51%;
+        left: 35%;
+    }
+    #music {
+        top: 57%;
+        left: 20%;
+    }
+    #media {
+        top: 59%;
+        left: 52%;
+    }
+}
+@media (max-aspect-ratio: 0.95/1) and (min-aspect-ratio: 0.87/1) {
+    .window-button {
+        display: inline-block;
+        position: absolute;
+        height: 6%;
+    }
+    .poster-button {
+        display: inline-block;
+        position: absolute;
+        height: 8%;
+    }
+    .window-images {
+        height: 100%;
+    }
+    .poster-images {
+        height: 100%;
+    }
+    #about-me {
+        top: 26%;
+        right: 2%;
+    }
+    #gallery {
+        top: 29.5%;
+        right: 3%;
+    }
+    #art {
+        top: 45%;
+        left: 23%;
+    }
+    #code {
+        top: 47%;
+        left: 52%;
+    }
+    #robotics {
+        top: 51%;
+        left: 35%;
+    }
+    #music {
+        top: 57%;
+        left: 20%;
+    }
+    #media {
+        top: 59%;
+        left: 52%;
+    }
+}
+@media (max-aspect-ratio: 0.87/1) and (min-aspect-ratio: 0.83/1) {
+    body {
+        background-position: 36% center;
+    }
+    .window-button {
+        display: inline-block;
+        position: absolute;
+        height: 6%;
+    }
+    .poster-button {
+        display: inline-block;
+        position: absolute;
+        height: 8%;
+    }
+    .window-images {
+        height: 100%;
+        transform: rotate(-15deg);
+    }
+    .poster-images {
+        height: 100%;
+    }
+    #about-me {
+        top: 39%;
+        right: 50%;
+    }
+    #gallery {
+        top: 40%;
+        right: 35%;
+    }
+    #art {
+        top: 45%;
+        left: 27%;
+    }
+    #code {
+        top: 47%;
+        left: 57%;
+    }
+    #robotics {
+        top: 51%;
+        left: 41%;
+    }
+    #music {
+        top: 57%;
+        left: 24%;
+    }
+    #media {
+        top: 59%;
+        left: 58%;
+    }
+}
+
+@media (max-aspect-ratio: 0.83/1) and (min-aspect-ratio: 0.765/1) {
+    body {
+        background-position: 36% center;
+    }
+    .window-button {
+        display: inline-block;
+        position: absolute;
+        height: 6%;
+    }
+    .poster-button {
+        display: inline-block;
+        position: absolute;
+        height: 8%;
+    }
+    .window-images {
+        height: 100%;
+        transform: rotate(-15deg);
+    }
+    .poster-images {
+        height: 100%;
+    }
+    #about-me {
+        top: 39%;
+        right: 49%;
+    }
+    #gallery {
+        top: 40%;
+        right: 33%;
+    }
+    #art {
+        top: 45%;
+        left: 27%;
+    }
+    #code {
+        top: 47%;
+        left: 57%;
+    }
+    #robotics {
+        top: 51%;
+        left: 41%;
+    }
+    #music {
+        top: 57%;
+        left: 24%;
+    }
+    #media {
+        top: 59%;
+        left: 58%;
+    }
+}
+@media (max-aspect-ratio: 0.765/1) and (min-aspect-ratio: 0.63/1) {
+    body {
+        background-position: 42% center;
+    }
+    .window-button {
+        display: inline-block;
+        position: absolute;
+        height: 6%;
+    }
+    .poster-button {
+        display: inline-block;
+        position: absolute;
+        height: 8%;
+    }
+    .window-images {
+        height: 100%;
+        transform: rotate(-15deg);
+    }
+    .poster-images {
+        height: 100%;
+    }
+    #about-me {
+        top: 39%;
+        right: 49%;
+    }
+    #gallery {
+        top: 40%;
+        right: 30%;
+    }
+    #art {
+        top: 45%;
+        left: 19%;
+    }
+    #code {
+        top: 47%;
+        left: 61%;
+    }
+    #robotics {
+        top: 51%;
+        left: 38%;
+    }
+    #music {
+        top: 57%;
+        left: 17%;
+    }
+    #media {
+        top: 59%;
+        left: 63%;
+    }
+}
+@media (max-aspect-ratio: 0.63/1) and (min-aspect-ratio: 0.53/1) {
+    body {
+        background-position: 48% center;
+    }
+    .window-button {
+        display: inline-block;
+        position: absolute;
+        height: 6%;
+    }
+    .poster-button {
+        display: inline-block;
+        position: absolute;
+        height: 8%;
+    }
+    .window-images {
+        height: 100%;
+        transform: rotate(-15deg);
+    }
+    .poster-images {
+        height: 100%;
+    }
+    #about-me {
+        top: 39%;
+        right: 53%;
+    }
+    #gallery {
+        top: 40%;
+        right: 30%;
+    }
+    #art {
         top: 45%;
         left: 9%;
     }
-    #music {
-        top: 58%;
-        left: 48%;
+    #code {
+        top: 47%;
+        left: 56%;
     }
-    #media {
-        top: 58%;
+    #robotics {
+        top: 51%;
+        left: 30%;
+    }
+    #music {
+        top: 57%;
         left: 6%;
     }
-    #about-me {
-        top: 68%;
-        left: 30%;
+    #media {
+        top: 59%;
+        left: 58%;
     }
 }
-@media (min-width: 300.02px) and (max-width: 400px) {
-    .button {
+@media (max-aspect-ratio: 0.53/1) {
+    body {
+        background-position: 48% center;
+    }
+    .window-button {
+        display: inline-block;
         position: absolute;
-        width: 150px;
-        height: 150px;
+        height: 6%;
+    }
+    .poster-button {
+        display: inline-block;
+        position: absolute;
+        height: 8%;
+    }
+    .window-images {
+        height: 100%;
+        transform: rotate(-15deg);
+    }
+    .poster-images {
+        height: 100%;
+    }
+    #about-me {
+        top: 39%;
+        right: 56%;
+    }
+    #gallery {
+        top: 40%;
+        right: 26%;
     }
     #art {
         top: 45%;
-        left: 50%;
-    }
-    #code {
-        top: 45%;
-        left: 13%;
-    }
-    #music {
-        top: 58%;
-        left: 48%;
-    }
-    #media {
-        top: 58%;
         left: 10%;
     }
-    #about-me {
-        top: 68%;
-        left: 30%;
-    }
-}
-@media (min-width: 400.02px) and (max-width: 500px) {
-    .button {
-        position: absolute;
-        width: 150px;
-        height: 150px;
-    }
-    #art {
-        top: 35%;
-        left: 50%;
-    }
     #code {
-        top: 35%;
-        left: 16%;
+        top: 47%;
+        left: 61%;
+    }
+    #robotics {
+        top: 51%;
+        left: 33%;
     }
     #music {
-        top: 48%;
-        left: 48%;
+        top: 57%;
+        left: 6%;
     }
     #media {
-        top: 48%;
-        left: 13%;
-    }
-    #about-me {
-        top: 58%;
-        left: 30%;
+        top: 59%;
+        left: 63%;
     }
 }
-@media (min-width: 500.02px) and (max-width: 600px) {
-    .button {
-        position: absolute;
-        width: 150px;
-        height: 150px;
-    }
-    #art {
-        top: 35%;
-        left: 50%;
-    }
-    #code {
-        top: 35%;
-        left: 21%;
-    }
-    #music {
-        top: 48%;
-        left: 48%;
-    }
-    #media {
-        top: 48%;
-        left: 18%;
-    }
-    #about-me {
-        top: 58%;
-        left: 30%;
-    }
-}
-@media (min-width: 600.02px) and (max-width: 750px) {
-    .button {
-        position: absolute;
-        width: 150px;
-        height: 150px;
-    }
-    #art {
-        top: 35%;
-        left: 50%;
-    }
-    #code {
-        top: 35%;
-        left: 23%;
-    }
-    #music {
-        top: 48%;
-        left: 48%;
-    }
-    #media {
-        top: 48%;
-        left: 20%;
-    }
-    #about-me {
-        top: 58%;
-        left: 30%;
-    }
-}
-@media (min-width: 750.02px) and (max-width: 850px) {
-    .button {
-        position: absolute;
-        width: 150px;
-        height: 150px;
-    }
-    #art {
-        top: 40%;
-        left: 50%;
-    }
-    #code {
-        top: 40%;
-        left: 26%;
-    }
-    #music {
-        top: 55%;
-        left: 48%;
-    }
-    #media {
-        top: 55%;
-        left: 23%;
-    }
-    #about-me {
-        top: 12%;
-        left: 70%;
-    }
-}
-@media (min-width: 850.02px) {
-    .button {
-        position: absolute;
-        width: 15%;
-        height: 15%;
-    }
-    #art {
-        top: 40%;
-        left: 50%;
-    }
-    #code {
-        top: 40%;
-        left: 30%;
-    }
-    #music {
-        top: 55%;
-        left: 48%;
-    }
-    #media {
-        top: 55%;
-        left: 27%;
-    }
-    #about-me {
-        top: 12%;
-        left: 70%;
-    }
-} */
