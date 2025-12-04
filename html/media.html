@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+    <title>Media</title>
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <a href="../index.html">
+            <img class="web-title" src="../images/logo-inverted.png">
+        </a>
+        <div></div>
+    </div>
+    <div class="poster">
+        <div class="above-text">
+            MEDIA AND CONTENT
+        </div>
+    </div>
+    <div class="project-list">
+        <div class="project-type-1 black-background">
+            <div class="gif-container-2">
+                <iframe src="https://drive.google.com/file/d/1hTLnQzCQpulE0Gp1Q2cgCatz9vDr4BMw/preview" class="rock-paper-gif-3" width="340" height="480" allow="autoplay"></iframe>
+            </div>
+            <div class="title-description">
+                <div class="top-section">
+                    <div class="title type-2">
+                        A Day in my Life
+                    </div>
+                    <div class="type type-2">
+                        Video
+                    </div>
+                </div>
+                <div class="middle-section type-2">
+                    <div class="description type-2 black-background-font">
+                        Who am I? What do I do in my daily life?
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-type-1">
+            <div class="title-description">
+                <div class="top-section">
+                    <div class="title type-1">
+                        Rukum Massacre Case
+                    </div>
+                    <div class="type type-1">
+                        Minidocumentary for a Discrimination Webinar, 9th grade
+                    </div>
+                </div>
+                <div class="middle-section">
+                    <div class="description type-1">
+                        In 9th grade, we students conducted an online webinar to raise awareness about discrimination. I chose to present a real-life case documentary to highlight the impact of caste-based prejudice, still prevalent in rural Nepal. Through my voice, I aimed to evoke a feeling of urgency among the audience to prevent such tragedies from happening again.
+                    </div>
+                </div>
+            </div>
+            <div class="gif-container-2">
+                <iframe src="https://drive.google.com/file/d/18Ezs9z085vBqt4ISJvv8MDQkWbV4C_4v/preview" class='rock-paper-gif-2' width="640" height="480" allow="autoplay"></iframe>
+            </div>
+        </div>
+        <div class="project-type-1">
+            <div class="gif-container">
+                <iframe src="https://drive.google.com/file/d/1m9X54vOCIcaywFsL3hRLpI9ABnnJHnfT/preview" class="rock-paper-gif-3" width="340" height="480" allow="autoplay"></iframe>
+            </div>
+            <div class="title-description">
+                <div class="top-section">
+                    <div class="title type-2">
+                        Vote for Rimon Kayastha
+                    </div>
+                    <div class="type type-2">
+                        Student Council Poster
+                    </div>
+                </div>
+                <div class="middle-section type-2">
+                    <div class="description type-2">
+                        Winning votes for StuCo requires a bit of marketing.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-type-1">
+            <div class="title-description">
+                <div class="top-section">
+                    <div class="title type-1">
+                        Kala Yatra
+                    </div>
+                    <div class="type type-1">
+                        Advertisement Video, 2023
+                    </div>
+                </div>
+                <div class="middle-section type-1">
+                    <div class="description type-1">
+                        Kala Yatra was an art exhibition hosted in the Academy of Fine Arts, Nepal, where underrepresented artists promoting local and traditional artforms were given a stage to present their artworks. As the IT Officer of the Interact Club of Kathmandu, I also developed this advertisement to digitally market it through social media and maximize the attendee turnout.
+                    </div>
+                </div>
+            </div>
+            <div class="gif-container-2">
+                <iframe src="https://drive.google.com/file/d/1OYv-Laf0bRYNjMR473NpphB-j_NCyah6/preview" class='rock-paper-gif-2' width="640" height="480" allow="autoplay"></iframe>
+            </div>
+        </div>
+    </div>
+    <script>
+        const firstimage = document.getElementById('first-image');
+        const secondimage = document.getElementById('second-image');
+        const thirdimage = document.getElementById('third-image')
+        function changeImage(action) {
+            if (action==='left') {
+                secondimageclass = secondimage.className
+                secondimage.className = thirdimage.className
+                thirdimage.className = firstimage.className
+                firstimage.className = secondimageclass
+            } else if (action==='right') {
+                secondimageclass = secondimage.className
+                secondimage.className = firstimage.className
+                firstimage.className = thirdimage.className
+                thirdimage.className = secondimageclass
+            }
+        }
+    </script>
+</body>
