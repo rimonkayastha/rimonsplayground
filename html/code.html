@@ -48,10 +48,12 @@
                 </div>
             </div>
             <div class="image-container">
-                <div class="images-2">
-                    <img class="images-2-1" src="../images/bloggers_hub/home.png">
-                    <img class="images-2-2" src="../images/bloggers_hub/account.png">
-                    <img class="images-2-3" src="../images/bloggers_hub/post-detail.png">
+                <div class="images-mechanism">
+                    <img class="left" src="../images/left_black.png" onClick="changeImage('left')">
+                    <img class="image-left" id="first-image" src="../images/bloggers_hub/account.png">
+                    <img class="image-centre"  id='second-image' src="../images/bloggers_hub/home.png">
+                    <img class="image-right" id='third-image' src="../images/bloggers_hub/post-detail.png">
+                    <img class="right" src="../images/right_black.png" onClick="changeImage('right')">
                 </div>
             </div>
         </div>
@@ -119,7 +121,7 @@
             </div>
             <div class="image-container">
                 <div class="gif-container">
-                    <img src="../images/way-out/game-img.png" class="rock-paper-gif">
+                    <img src="../images/way-out/game-img.png" class="way-out-image">
                 </div>
             </div>
         </div>
@@ -158,5 +160,21 @@
         </div>
     </div>
     <script>
+        const firstimage = document.getElementById('first-image');
+        const secondimage = document.getElementById('second-image');
+        const thirdimage = document.getElementById('third-image')
+        function changeImage(action) {
+            if (action==='left') {
+                secondimageclass = secondimage.className
+                secondimage.className = thirdimage.className
+                thirdimage.className = firstimage.className
+                firstimage.className = secondimageclass
+            } else if (action==='right') {
+                secondimageclass = secondimage.className
+                secondimage.className = firstimage.className
+                firstimage.className = thirdimage.className
+                thirdimage.className = secondimageclass
+            }
+        }
     </script>
 </body>
