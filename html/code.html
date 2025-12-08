@@ -25,6 +25,33 @@
     </div>
     <div class="project-list">
         <div class="project-type-1">
+            <div class="image-container">
+                <div class="images-mechanism">
+                    <img class="left-2" src="../images/left_black.png" onClick="changeImage2('left')">
+                    <img class="image-left-2" id="first-image-2" src="../images/glucoguidehome.png">
+                    <img class="image-centre-2"  id='second-image-2' src="../images/glucoguidelogin.png">
+                    <img class="image-right-2" id='third-image-2' src="../images/glucoguide3.png">
+                    <img class="right-2" src="../images/right_black.png" onClick="changeImage2('right')">
+                </div>
+            </div>
+            <div class="title-description">
+                <div class="top-section">
+                    <div class="title type-2">
+                        GlucoGuide
+                    </div>
+                    <div class="type type-2">
+                        Hyperglycemia Assistance Application - IBDP Computer Internal Assessment</br>
+                        Flutter, Firebase
+                    </div>
+                </div>
+                <div class="middle-section type-2">
+                    <div class="description type-2">
+                        The IB Diploma Computer Science Internal Assessment is a core Computer Science assessment requirement where students create an application for a client of their choice. I saw this requirement as an opportunity to help my fupu, my aunt, in my own way. My fupu is diagnosed with hyperglycemia and a part of her treatment process is to record her blood sugar level regularly throughout the day. My app provides a way for her to digitize her blood sugar records and use the information to predict future levels in order to accurately estimate the dose of insulin required to stablize it.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-type-1">
             <div class="title-description">
                 <div class="top-section">
                     <div class="title type-1">
@@ -163,7 +190,10 @@
     <script>
         const firstimage = document.getElementById('first-image');
         const secondimage = document.getElementById('second-image');
-        const thirdimage = document.getElementById('third-image')
+        const thirdimage = document.getElementById('third-image');
+        const firstimage2 = document.getElementById('first-image-2');
+        const secondimage2 = document.getElementById('second-image-2');
+        const thirdimage2 = document.getElementById('third-image-2')
         function changeImage(action) {
             if (action==='left') {
                 secondimageclass = secondimage.className
@@ -175,6 +205,19 @@
                 secondimage.className = firstimage.className
                 firstimage.className = thirdimage.className
                 thirdimage.className = secondimageclass
+            }
+        }
+        function changeImage2(action) {
+            if (action==='left') {
+                secondimageclass = secondimage2.className
+                secondimage2.className = thirdimage2.className
+                thirdimage2.className = firstimage2.className
+                firstimage2.className = secondimageclass
+            } else if (action==='right') {
+                secondimageclass = secondimage2.className
+                secondimage2.className = firstimage2.className
+                firstimage2.className = thirdimage2.className
+                thirdimage2.className = secondimageclass
             }
         }
     </script>

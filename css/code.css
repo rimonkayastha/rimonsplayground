@@ -218,6 +218,52 @@ a {
     z-index: 1;
     border: 2px solid black;
 }
+.right-2 {
+    width: 8%;
+    position: absolute;
+    z-index: 3;
+    right: 20%;
+    transition: width 0.5s;
+}
+.right-2:hover {
+    width: 10%;
+    cursor: pointer;
+}
+.left-2 {
+    width: 8%;
+    z-index: 3;
+    position: absolute;
+    left: 10%;
+    transition: width 0.5s;
+}
+.left-2:hover {
+    width: 10%;
+    cursor: pointer;
+}
+#first-image-2, #second-image-2, #third-image-2 {
+    transition: width 1s, z-index 1s, left 1s;
+}
+.image-centre-2 {
+    width: 30%;
+    position: absolute;
+    left: 30%;
+    z-index: 2;
+    border: 2px solid black;
+}
+.image-left-2 {
+    width: 15%;
+    position: absolute;
+    left: 20%;
+    z-index: 0;
+    border: 2px solid black;
+}
+.image-right-2 {
+    width: 15%;
+    position: absolute;
+    left: 55%;
+    z-index: 1;
+    border: 2px solid black;
+}
 .image-container {
     display: flex;
     flex-direction: column;
