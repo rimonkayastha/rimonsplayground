@@ -1,0 +1,61 @@
+<head>
+    <title>Rimon Kayastha</title>
+    <link rel="stylesheet" href="../css/about-me.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="poster">
+        <div class="header">
+            <a href="../index.html">
+                <img class="web-title" src="../images/logo.png">
+            </a>
+        </div>
+    </div>
+    <div class="main-body">
+        <div class="name-section">
+            <div class="name">RIMON <br>KAYASTHA</div>
+            <div class="button-section">
+                <div class="video-button" id='video-1' onClick="text(2)">A Day in my Life</div>
+                <div class="who-am-i-button" onClick="text(1)">About me</div>
+                <div class="video-button" id='video-2' onClick="text(3)">Who am I?</div>
+            </div>
+        </div>
+        <div class="display-about-me">
+            <img class="me-image" src="../images/rimon_kayastha.jpeg">
+        </div>
+    </div>
+    <script>
+        const whoami = document.querySelector('.who-am-i-button');
+        const video1 = document.getElementById('video-1');
+        const video2 = document.getElementById('video-2');
+        const mainsection = document.querySelector('.name');
+        function text(button) {
+            whoami.classList.remove('who-am-i-button-active');
+            video1.classList.remove('video-button-active');
+            video2.classList.remove('video-button-active');
+            mainsection.classList.remove('name-description')
+            mainsection.classList.add('name')
+            if(button===1) {
+                whoami.classList.add('who-am-i-button-active');
+                mainsection.innerHTML = "Hello, Namaste, Jwajalapa. My name is <span style='color: #eb4716;'> Rimon Kayastha </span> and I'm an 18 year old tech enthusiast from Nepal. <br> I cherish <span style='color: #eb4716;'> design, creativity </span> and <span style='color: #eb4716;'> blending distinct strengths </span> into beautiful products. My ultimate life goal is to develop and make <span style='color: #eb4716;'> assistive technology </span> accessible to all. And in the process of discovering this goal, I have explored and enjoyed various interests over time and will continue to do so in the future. <br> Here, I present myself, my ideas, mental blueprints and real executions. This is <span style='color: #eb4716;'> Rimon's playground</span>.";
+                mainsection.classList.add('name-description');
+                mainsection.classList.remove('name');
+            } else if (button===2){
+                video1.classList.add('video-button-active');
+                mainsection.innerHTML = `
+                <div class="gif-container-2">
+                    <iframe src="https://drive.google.com/file/d/1hTLnQzCQpulE0Gp1Q2cgCatz9vDr4BMw/preview" class="rock-paper-gif-3" width="340" height="480" allow="autoplay"></iframe>
+                </div>`;
+            } else {
+                video2.classList.add('video-button-active');
+                mainsection.innerHTML = `
+                <div class="gif-container-2">
+                    <iframe src="https://drive.google.com/file/d/16iRdwqiKTTzERNxt3WJ-jhVrf1fASzFk/preview" class='rock-paper-gif-2' width="640" height="480" allow="autoplay"></iframe>
+                </div>`;
+            }
+        }
+    </script>
+</body>
